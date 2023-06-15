@@ -1,0 +1,95 @@
+:root {
+  --main-font: Arial, sans-serif;
+  --heading-color: blue;
+  --container-bg-color: lightgray;
+  --table-bg-color: lightblue;
+  --table-cell-border-color: darkblue;
+  --link-hover-color: red;
+  --link-click-color: green;
+}
+
+body {
+    font-family: var(--main-font);
+  }
+  
+  h1 {
+    color: var(--heading-color);
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: .5em;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  tr:hover {
+    background-color: lightgray;
+  }
+  
+  .first-list-item {
+    color: blue;
+  }
+  
+/*   img {
+    width: 100px;
+  } */
+  
+  table th:first-child, table td:first-child {
+    border-left: none;
+  }
+  
+  table th:last-child, table td:last-child {
+    border-right: none;
+  }
+  
+  table thead {
+    background-color: var(--table-bg-color);
+  }
+  
+  ::before, ::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+  
+  ::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+  }
+  
+  ::after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    background-color: blue;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
